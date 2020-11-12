@@ -1,0 +1,119 @@
+.body {
+  height: 100vh;
+  flex: 0.9;
+  color: white;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+  background-color: rgb(91, 87, 115);
+  padding: 30px;
+  padding: 0px;
+  overflow-y: overlay;
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body__info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.body__info img {
+  height: 15vw;
+  margin: 0 20px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.body__infoText > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.body__infoText > p {
+  font-size: 14px;
+}
+
+.body__songs {
+  margin: 20px 0px;
+  margin-bottom: 60px;
+}
+
+.body__icons .body__shuffle {
+  font-size: 80px !important;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.body__icons .body__shuffle:hover {
+  transition: 100ms transorm ease-in;
+  transform: scale(1.08);
+}
+
+.body__icons {
+  display: flex;
+  align-items: center;
+}
+
+.body__icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.searchAlbums {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  overflow-y: hidden;
+  overflow-x: overlay;
+  padding-right: 60px;
+}
+
+.searchAlbums::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+}
+
+.searchAlbums::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+.searchAlbums::-webkit-scrollbar-thumb {
+  background: #09080b;
+  border-radius: 10px;
+}
+
+.searchResultTitle {
+  font-size: 18px;
+}
+
+.searchTracks {
+  margin-top: 10px;
+}
+
+/* .dot {
+  font-size: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body__infoDescription {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+} */
+
+.body__main {
+  padding-left: 10px;
+  padding-bottom: 40px;
+}
+
+.searchData {
+  padding-left: 30px;
+  padding-bottom: 100px;
+}

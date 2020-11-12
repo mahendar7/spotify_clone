@@ -1,0 +1,17 @@
+.search input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.search {
+  background-color: white;
+  color: grey;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  min-width: 250px;
+  max-height: 40px;
+}
