@@ -100,7 +100,6 @@ function Body({spotify}) {
                 )
             }
             
-            
         </div>
     )
 }

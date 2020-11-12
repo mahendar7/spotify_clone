@@ -17,22 +17,14 @@ import { useDataLayerValue } from '../../DataLayer';
 
 function Footer() {
     const [{album, song, play}, dispatch] = useDataLayerValue();
-    const [audio, setAudio] = useState(null);
     const [volume, setVolume] = useState(1);
-    
-    const valuetext = (value) => `${value}°C`;
-      
+          
       useEffect(() => {
+        let _audio = document.getElementById("audio");
           if(play){
-            let _audio = document.getElementById("audio");
-            if(_audio){
-                _audio.play();
-            }
+            if(_audio){_audio.play()}
           }else{
-            let _audio = document.getElementById("audio");
-            if(_audio){
-                _audio.pause();
-            }
+            if(_audio){_audio.pause()}
           }
         
       }, [play])
@@ -59,14 +51,6 @@ function Footer() {
                 prevOrNext: value,
             });
       }
-      
-    //   useEffect(() => {
-    //     let _audio = document.getElementById("audio");
-    //     if(_audio){
-    //         setAudio(_audio)
-    //         audio.play();
-    //     }
-    //   }, [song])
 
     const handleVolumeChange = (event, volume) => {
         setVolume(volume);
@@ -120,7 +104,6 @@ function Footer() {
                             aria-labelledby="continuous-slider"
                             valueLabelDisplay="auto"
                             step={0.1}
-                            marks
                             min={0}
                             max={1.0}
                             onChange={handleVolumeChange}
