@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### Demo(https://www.linkedin.com/posts/mahendar-kolpula_react-github-project-activity-6732617190681534464-uQ2s?utm_source=share&utm_medium=member_desktop&rcm=ACoAABzSrZUBXSioTfYJAlwUbUh4UCjcHACXy44)
+
 ### `yarn start`
 
 Runs the app in the development mode.\
